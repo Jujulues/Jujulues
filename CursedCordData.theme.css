@@ -1097,7 +1097,103 @@ mask circle[r="46"] {
 }
 
 /* --------------------------------USER STATUS INDICATOR*--------------------------------*/
+.mask_a423bd {
+  display: none!important;
+}
 
+rect[fill="black"][height="36"][width="28"]{
+  display:none!important; 
+}
+rect[fill="white"][height="36"][width="28"]{
+  display:none!important; 
+}
+/*move position of online / dnd/ away circle*/
+g rect[width="16"][height="16"][x="60"] {
+  mask:none!important;
+    width: 18px!important;
+    height:18px!important;
+}
+
+._44b0c28be7879b7b-pointerEvents{
+  border:none!important;
+  outline:none!important;
+}
+
+g rect[width="16"][height="24"][x="60"]{
+      mask:none!important;
+    width: 18px!important;
+    height:18px!important;
+    transform:translate(0px,8px)!important;
+}
+
+svg[width="40"][height="24"][viewbox="0 0 40 24"]{
+    transform:translate(12px, 8px)!important;
+}
+
+g rect[width="12"][height="12"][x="28"][mask][class]{
+  mask:none!important;
+  transform: translate(-16px,-16px) scale(1.4,1.4)!important;
+}
+
+g rect[width="12"][height="18"][x="28"][y="22"][mask][class]{
+  mask:none!important;
+  transform:translate(2px,2px) scale(0.97,0.97)!important;
+}
+/*removing masks off status indicators */
+svg[width="25"][height="15"] [id] {
+  display:none!important;
+}
+
+rect[width="25"][height="15"] {
+    height:15px!important;
+    width: 15px!important;
+    transform: translate(3px, 1px)!important;
+}
+rect[width="40"][height="24"][mask] {
+  mask:none!important;
+}
+
+g rect[width="10"][height="10"][x="22"][mask] {
+    height:15px!important;
+    width: 15px!important;
+    transform: translate(-5px, -5px)!important;
+  mask:none!important;
+}
+rect[width="10"][height="15"][x="22"][y="17"] {
+  stroke-width: 0px!important;
+  transform: translate(-5px, 0px)!important;
+}
+circle[fill="black"][cx="68"],
+circle[fill="white"][cx="68"],
+circle[fill="black"][cx="92"][cy="140"],
+circle[fill="white"][cx="92"][cy="140"],
+circle[fill="black"][r="10"][cx="34"],
+circle[fill="white"][r="10"][cx="34"],
+rect[fill="black"][height="26"][width="20"],
+rect[fill="white"][height="26"][width="20"],
+circle[fill="black"][r="20"][cy="100"],
+circle[fill="white"][r="20"][cy="100"]{
+    display:none!important;
+}
+
+
+rect[width="10"][height="15"][x="22"] {
+    height:15px!important;
+    width: 15px!important;
+  mask:none!important;
+}
+
+g rect[width="24"][height="24"][x="88"][y="88"][mask][class]{
+  mask:none!important;
+  transform: translate(12px,12px)!important;
+}
+
+._44b0c28be7879b7b-cursorDefault{
+    mask-image: url("https://i.postimg.cc/QMmGCkHZ/right-triangle-for-status-indicator.png")
+}
+._44b0c28be7879b7b-wrapper g rect[width="10"][height="10"][x="22"][fill="transparent"] {
+    transform: translate(-20px, -20px)!important;
+}
 /*triangle mask for some status indicators*/
 .mask__44b0c g{
     mask-image: url("https://i.postimg.cc/QMmGCkHZ/right-triangle-for-status-indicator.png")!important;
