@@ -1101,7 +1101,7 @@ mask circle[r="46"] {
   display: none!important;
 }
 
-rect[fill="black"][height="36"][width="28"]{
+rect[fill="black"][height="18"][width="18"]{
   display:none!important; 
 }
 rect[fill="white"][height="36"][width="28"]{
